@@ -20,6 +20,10 @@ public class Post {
     private String titulo;
     private String corpo;
 
+    public Post(Integer postId) {
+        this.id = postId;
+    }
+
     public static Post of(PostRequest request) {
         var post = new Post();
         post.setTitulo(request.getTitulo());
